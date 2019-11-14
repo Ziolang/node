@@ -10,13 +10,13 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<form>
-		Weight: <input type="number"><br/>
+	<form action="mail" method="get">
+		Weight: <input name="weight" type="number"><br/>
 		Mail Type: <select>
-			<option>Letters (Stamped)</option>
-			<option>Letters (Metered)</option>
-			<option>Large Envelopes (Flats)</option>
-			<option>First-Class Package Service—Retail</option>
+			<input type="radio" name="mail" value="Letters (Stamped)">
+			<input type="radio" name="mail" value="Letters (Metered)">
+			<input type="radio" name="mail" value="Large Envelopes (Flats)">
+			<input type="radio" name="mail" value="First-Class Package Service—Retail">
 		</select>
 		<input type="submit">
 	</form>
