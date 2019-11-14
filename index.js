@@ -103,8 +103,5 @@ function computeMail(req, res){
 		}
 	}
 
-	console.log(result);
-	res.render("pages/week09", {
-	  result: result
-	})
+	res.render("pages/week09", { result: result })
 }
