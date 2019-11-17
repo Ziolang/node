@@ -10,14 +10,24 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<form action="../mail" method="get">
-		Weight: <input name="weight" type="number"><br/>
-		Mail Type: <br/>
-			<input type="radio" name="type" value="ls"> Letters (Stamped) <br/>
-			<input type="radio" name="type" value="lm"> Letters (Metered) <br/>
-			<input type="radio" name="type" value="le"> Large Envelopes (Flats) <br/>
-			<input type="radio" name="type" value="fc"> First-Class Package Service—Retail <br/>
-		<input type="submit">
-	</form>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+			</div>
+			<div class="box col-sm-6">
+				<form action="../mail" method="get">
+					Weight: <input name="weight" type="number" value="1" step="0.1"><br/>
+					Mail Type: <br/>
+						<input type="radio" name="type" value="ls"> Letters (Stamped) <br/>
+						<input type="radio" name="type" value="lm"> Letters (Metered) <br/>
+						<input type="radio" name="type" value="le"> Large Envelopes (Flats) <br/>
+						<input type="radio" name="type" value="fc"> First-Class Package Service—Retail <br/>
+					<input type="submit">
+				</form>
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+	</div>
 </body>
 </html>
